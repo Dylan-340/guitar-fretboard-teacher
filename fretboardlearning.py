@@ -21,7 +21,8 @@ print("--Guitar Fretboard Teacher--\n")
 def manual_setup():        # Asks the user if they want the notes to scroll automatically or manually, and gets the automatic delay if chosen, returns the bool of if manual mode is active, and if not the auto delay for the strings.
     
     note_delay = ""
-
+    str_note_delay = ""
+    
     print("Do you want auto or manual notes?\n")       
     manual_input = input("[a/m]: ").lower()
     while manual_input != "a" and manual_input != "m":
