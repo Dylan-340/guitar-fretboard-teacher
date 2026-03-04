@@ -37,17 +37,17 @@ def fret_hints_setup():                                 # Asks the user if they 
     return fret_hints_input
     
     
-manual_input = manual_setup()
+manual_input = manual_setup() 
 #fret_hints_input = fret_hints_setup()
 
 
 if manual_input != True:
 
-    str_note_delay = input("What delay in seconds would you like?: ")
-    if str_note_delay == "":
+    str_note_delay = input("What delay in seconds would you like?: ") # Sets the delay between notes being printed if automatic notes are chosen
+    if str_note_delay == "": # If user leaves delay blank it defaults to 1 second
         note_delay = 1
     else:
-        note_delay = float(str_note_delay)
+        note_delay = float(str_note_delay) 
 
 
 
