@@ -62,10 +62,10 @@ def fret_hints_setup():                                 # Asks the user if they 
     fret_hints_input = (fret_hints_input == 'y')
 
     if fret_hints_input == True:
-        used_string = input("What string would you like the hints for? [E/A/D/G/B]").lower()
+        used_string = input("What string would you like the hints for? [E/A/D/G/B]: ").lower()
         while used_string != "e" and used_string != "a" and used_string != "d" and used_string != "g" and used_string != "b":
             print("error, answer must be an e, a, d, g, or b")
-            used_string = input("What string would you like the hints for? [E/A/D/G/B]").upper()
+            used_string = input("What string would you like the hints for? [E/A/D/G/B]: ").upper()
 
     return fret_hints_input, used_string
     
@@ -98,5 +98,4 @@ if fret_hints_input == True:        # chooses the string that should be used for
 if manual_input == True:            # runs the proper auto/manual mode
     manual_notes()
 else:
-    print("auto")
     automatic_notes()
