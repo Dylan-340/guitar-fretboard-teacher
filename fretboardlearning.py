@@ -5,6 +5,9 @@
 from time import sleep
 
 import random
+from os import system
+
+system("clear")
 
 notes = ["A", "B", "C", "D", "E", "F", "G", "Bb/A#", "C#/Db", "D#/Eb", "F#/Gb", "G#/Ab"] #Note names
 estring_frets = ["5", "7", "8", "10", "12", "1", "3", "6", "9", "11", "2", "4"] # Fret numbers for e strings
